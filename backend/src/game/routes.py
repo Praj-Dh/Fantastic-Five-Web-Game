@@ -129,18 +129,22 @@ def handle_join(data):
 
     # if first time login: create the player and pick random start cell
     if username not in players:
-        start_x = random.randint(0, WORLD_COLS - 1)
-        start_y = random.randint(0, WORLD_ROWS - 1)
+        # Spawn within the central zone so players start in the middle of the grid
+        SPAWN_MARGIN = 30   # keep away from the outer 30% on each side
+        start_x = random.randint(SPAWN_MARGIN, WORLD_COLS - 1 - SPAWN_MARGIN)
+        start_y = random.randint(SPAWN_MARGIN, WORLD_ROWS - 1 - SPAWN_MARGIN)
         players[username] = {
             'username': username,
             'position': {'x': start_x, 'y': start_y},
             'room': room,
             'color': generate_color(username)
         }
-        user_sids[username] = set()
 
-    # register this sid
-    user_sids[username].add(sid)
+    # Defensively ensure user_sids[username] exists before adding.
+    # If a player re-joins before their old disconnect event fully propagates,
+    # players[username] may still exist but user_sids[username] could have been
+    # deleted — using setdefault() prevents a silent KeyError crash.
+    user_sids.setdefault(username, set()).add(sid)
     sid_to_user[sid] = username
     join_room(room)
     # print(f"{username} joined SID={sid}; tabs now={len(user_sids[username])}")

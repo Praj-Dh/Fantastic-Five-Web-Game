@@ -83,6 +83,23 @@ def login():
         "username": username
     }), 200
 
+
+@auth_bp.route('/logout', methods=['POST'])
+def logout():
+    username = session.get('username', 'unknown')
+    session.clear()
+    logging.info(f'{username} logged out')
+    return jsonify({"message": "Logged out successfully"}), 200
+
+
+@auth_bp.route('/check', methods=['GET'])
+def check_auth():
+    """Return whether the current session has an authenticated user."""
+    username = session.get('username')
+    if username:
+        return jsonify({"authenticated": True, "username": username}), 200
+    return jsonify({"authenticated": False}), 200
+
 ############################
 
 # FOR AVATARS

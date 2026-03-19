@@ -63,11 +63,14 @@ function GameCanvas({ username }) {
   // pull our sizing logic into a function we can call on mount, on shrink, or on window resize
   const recalcGridSize = useCallback(() => {
     if (!containerRef.current) return;
-    const height = containerRef.current.clientHeight;
-    // subtract your leaderboard width (or any padding)
-    const width  = containerRef.current.clientWidth - 150;
-    const sizeBasedOnHeight = Math.floor(height / VIEW_ROWS);
-    const sizeBasedOnWidth  = Math.floor(width  / VIEW_COLS);
+    const totalH = containerRef.current.clientHeight;
+    const totalW = containerRef.current.clientWidth;
+    // canvas panel is flex:3 out of flex:3+1 = 75% of total width
+    // subtract padding on the canvas-panel (1.5rem each side ≈ 48px) + canvas-wrapper padding (24px)
+    const availW = totalW * 0.75 - 72;
+    const availH = totalH - 48; // subtract canvas-panel vertical padding
+    const sizeBasedOnHeight = Math.floor(availH / VIEW_ROWS);
+    const sizeBasedOnWidth  = Math.floor(availW / VIEW_COLS);
     setGridSize(Math.min(sizeBasedOnHeight, sizeBasedOnWidth));
   }, [VIEW_ROWS, VIEW_COLS]);
 
@@ -557,7 +560,24 @@ function GameCanvas({ username }) {
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
+
+    // ── HiDPI / Retina fix ──────────────────────────────────────
+    const dpr = window.devicePixelRatio || 1;
+    const logicalW = VIEW_COLS * gridSize;
+    const logicalH = VIEW_ROWS * gridSize;
+
+    // Set the *actual* pixel buffer size (2× on Retina, etc.)
+    canvas.width  = Math.round(logicalW * dpr);
+    canvas.height = Math.round(logicalH * dpr);
+
+    // Keep the CSS / layout size at the logical dimensions
+    canvas.style.width  = `${logicalW}px`;
+    canvas.style.height = `${logicalH}px`;
+
     const ctx = canvas.getContext('2d');
+    // Scale all drawing operations so we use logical coordinates everywhere
+    ctx.scale(dpr, dpr);
+    // ────────────────────────────────────────────────────────────
 
     // compute camera origin so player is centered when possible
     const camX = Math.max(
@@ -569,8 +589,8 @@ function GameCanvas({ username }) {
       Math.min(position.y - Math.floor(VIEW_ROWS/2), WORLD_ROWS - VIEW_ROWS)
     );
 
-    // clear the 25×25 viewport
-    ctx.clearRect(0, 0, VIEW_COLS * gridSize, VIEW_ROWS * gridSize);
+    // clear the 25×25 viewport (in logical pixels — context is already scaled)
+    ctx.clearRect(0, 0, logicalW, logicalH);
 
     // paint cells that lie within the viewport
     Object.entries(grid).forEach(([key, {color}]) => {
@@ -587,20 +607,20 @@ function GameCanvas({ username }) {
     });
 
     // draw grid lines for 25×25 cells
-    ctx.strokeStyle = '#999'; // darker lines on dark background
-    ctx.lineWidth = 1;
+    ctx.strokeStyle = 'rgba(170, 185, 210, 0.55)';
+    ctx.lineWidth = 0.5;          // stays crisp because buffer is DPR-scaled
     for (let i = 0; i <= VIEW_COLS; i++) {
       const sx = i * gridSize;
       ctx.beginPath();
       ctx.moveTo(sx, 0);
-      ctx.lineTo(sx, VIEW_ROWS * gridSize);
+      ctx.lineTo(sx, logicalH);
       ctx.stroke();
     }
     for (let j = 0; j <= VIEW_ROWS; j++) {
       const sy = j * gridSize;
       ctx.beginPath();
       ctx.moveTo(0, sy);
-      ctx.lineTo(VIEW_COLS * gridSize, sy);
+      ctx.lineTo(logicalW, sy);
       ctx.stroke();
     }
 
@@ -609,35 +629,28 @@ function GameCanvas({ username }) {
       const px = (pos.x - camX) * gridSize;
       const py = (pos.y - camY) * gridSize;
 
-      // 1) Choose the right <img> ref:
-      //    - if it's you, use the one under your own username
-      //    - otherwise, use the one keyed by that other user's name
       const key = isSelf ? username : u;
       const img = avatarImages.current[key];
 
-      // 2) Only draw it once it's fully loaded and valid:
       if (img && img.complete && img.naturalWidth > 0 && img.naturalHeight > 0) {
         ctx.drawImage(img, px, py, gridSize, gridSize);
       } else {
-        // fallback to a solid-colored square
         ctx.fillStyle = isSelf ? selfColor : color;
         ctx.fillRect(px, py, gridSize, gridSize);
       }
 
-      // border
-      ctx.strokeStyle = '#000';
-      ctx.lineWidth = 2;
+      // border — thinner looks sharper at high DPR
+      ctx.strokeStyle = 'rgba(0,0,0,0.18)';
+      ctx.lineWidth = 0.75;
       ctx.strokeRect(px, py, gridSize, gridSize);
 
-      // name tag background
-      ctx.font = 'bold 12px Arial';
+      // name tag — font in logical px; the DPR scale makes it razor-sharp
+      ctx.font = `bold ${Math.max(10, Math.round(gridSize * 0.48))}px Inter, Arial, sans-serif`;
       const textW = ctx.measureText(u).width;
-      ctx.fillStyle = 'rgba(0,0,0,0.6)';
-      ctx.fillRect(px - 2, py - 18, textW + 4, 16);
-
-      // name text
-      ctx.fillStyle = '#fff';
-      ctx.fillText(u, px, py - 4);
+      ctx.fillStyle = 'rgba(255,255,255,0.90)';
+      ctx.fillRect(px - 1, py - 17, textW + 8, 15);
+      ctx.fillStyle = '#1e2530';
+      ctx.fillText(u, px + 3, py - 5);
     }
 
     // draw *other* players
@@ -664,42 +677,51 @@ function GameCanvas({ username }) {
 
   return (
     <div className="game-container" ref={containerRef}>
-      {/*<h2>Game Canvas</h2>*/}
-      {/*<p>Use arrow keys to move. Other players will see you moving.</p>*/}
       {!isConnected && (
         <p className="connection-warning">Connecting to server...</p>
       )}
-      <div>
-        <canvas
-          ref={canvasRef}
-          width={VIEW_COLS * gridSize}
-          height={VIEW_ROWS * gridSize}
-          style={{
-            width:  `${VIEW_COLS * gridSize}px`,
-            height: `${VIEW_ROWS * gridSize}px`
-          }}
-        />
-      </div>
 
+      {/* Zone 2: Canvas (3/4) */}
+      <div className="canvas-panel">
+        <div className="canvas-wrapper">
+          <canvas
+            ref={canvasRef}
+            width={VIEW_COLS * gridSize}
+            height={VIEW_ROWS * gridSize}
+            style={{
+              width:  `${VIEW_COLS * gridSize}px`,
+              height: `${VIEW_ROWS * gridSize}px`
+            }}
+          />
+        </div>
+      </div>
+              {/* Zone 3: Sidebar (1/4) */}
       <div className="sidebar">
         <div className="leaderboard">
           <h3>Leaderboard</h3>
-          <ol>
+          <ol className="leaderboard-list">
             {leaderboard.map(({user, count}) => (
               <li
                 key={user}
-                style={{
-                  fontWeight: user === username ? 'bold' : 'normal',
-                  backgroundColor: user === username
-                    ? 'rgba(255,255,255,0.2)'
-                    : 'transparent',
-                  padding: user === username ? '2px 4px' : undefined,
-                  borderRadius: user === username ? '4px' : undefined
-                }}
+                style={user === username ? {
+                  borderColor: '#d4a0a0',
+                  backgroundColor: '#fdf0f0'
+                } : {}}
               >
-                <span style={{color: serverColors[user] || '#000'}}>
-                  {user}
-                </span>: {count}
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <span style={{
+                    display: 'inline-block',
+                    width: '12px',
+                    height: '12px',
+                    borderRadius: '50%',
+                    backgroundColor: serverColors[user] || '#ccc',
+                    border: '1px solid rgba(0,0,0,0.1)'
+                  }} />
+                  <span style={{ fontWeight: 'bold' }}>
+                    {user}
+                  </span>
+                </div>
+                <span className="leaderboard-score" style={{ color: '#7a5a5a', fontSize: '0.82rem' }}>{count}</span>
               </li>
             ))}
           </ol>
@@ -759,16 +781,7 @@ function GameCanvas({ username }) {
             {allAchievementsUnlocked && (
               <div
                 className="all-achievements-unlocked"
-                style={{
-                  marginTop: '10px',
-                  padding: '5px',
-                  backgroundColor: 'rgba(0,64,255,0.39)',
-                  borderRadius: '5px',
-                  textAlign: 'center',
-                  fontWeight: 'bold',
-                  color: 'gold',
-                  textShadow: '0 0 2px rgba(0, 0, 0, 0.5)'
-                }}
+                style={{}}
               >
                 All Achievements Unlocked!
               </div>

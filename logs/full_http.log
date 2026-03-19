@@ -2190,3 +2190,2903 @@ Response Body:
 <p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
 
 
+2026-03-19 22:20:17,603 GET /api/auth/check from 172.18.0.4 (user=anonymous) → 404
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+Request Body:
+
+
+Response Body:
+<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+
+2026-03-19 22:20:31,398 POST /api/auth/login from 172.18.0.4 (user=prajwal2000) → 200
+Request Headers:
+Content-Type: application/json
+Content-Length: 50
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+Request Body:
+b'{"username":"prajwal2000","password":"[REDACTED]"}'
+
+Response Body:
+{
+  "message": "Login successful",
+  "username": "prajwal2000"
+}
+
+
+2026-03-19 22:20:31,412 GET /api/game/achievements from 172.18.0.4 (user=prajwal2000) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx2rw.L7E8qz3CB6CCPW2J0qCaQ0qFmPU
+
+Request Body:
+
+
+Response Body:
+{
+  "achievements": {
+    "allUnlocked": false,
+    "fiftyPoints": false,
+    "hundredPoints": false,
+    "twoHundredPoints": false
+  }
+}
+
+
+2026-03-19 22:20:31,424 GET /api/game/player-stats from 172.18.0.4 (user=prajwal2000) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx2rw.L7E8qz3CB6CCPW2J0qCaQ0qFmPU
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 1,
+  "current_score": 1,
+  "games_played": 0,
+  "max_score": 1,
+  "min_score": 1,
+  "total_score": 1,
+  "username": "prajwal2000"
+}
+
+
+2026-03-19 22:21:01,436 GET /api/game/player-stats from 172.18.0.4 (user=prajwal2000) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx2rw.L7E8qz3CB6CCPW2J0qCaQ0qFmPU
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 178,
+  "current_score": 178,
+  "games_played": 0,
+  "max_score": 178,
+  "min_score": 178,
+  "total_score": 178,
+  "username": "prajwal2000"
+}
+
+
+2026-03-19 22:21:18,827 GET /api/auth/profile from 172.18.0.4 (user=prajwal2000) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx2rw.L7E8qz3CB6CCPW2J0qCaQ0qFmPU
+
+Request Body:
+
+
+Response Body:
+{
+  "avatar": null
+}
+
+
+2026-03-19 22:21:19,993 POST /api/auth/logout from 172.18.0.4 (user=prajwal2000) → 405
+Request Headers:
+Content-Type: application/json
+Content-Length: 2
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx2rw.L7E8qz3CB6CCPW2J0qCaQ0qFmPU
+
+Request Body:
+{}
+
+Response Body:
+<!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+
+2026-03-19 22:21:21,692 POST /api/auth/logout from 172.18.0.4 (user=prajwal2000) → 405
+Request Headers:
+Content-Type: application/json
+Content-Length: 2
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx2rw.L7E8qz3CB6CCPW2J0qCaQ0qFmPU
+
+Request Body:
+{}
+
+Response Body:
+<!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+
+2026-03-19 22:30:39,014 GET /api/auth/check from 172.18.0.4 (user=prajwal2000) → 404
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx2rw.L7E8qz3CB6CCPW2J0qCaQ0qFmPU
+
+Request Body:
+
+
+Response Body:
+<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+
+2026-03-19 22:30:45,344 POST /api/auth/login from 172.18.0.4 (user=prajwal2000) → 200
+Request Headers:
+Content-Type: application/json
+Content-Length: 50
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx2rw.L7E8qz3CB6CCPW2J0qCaQ0qFmPU
+
+Request Body:
+b'{"username":"prajwal2000","password":"[REDACTED]"}'
+
+Response Body:
+{
+  "message": "Login successful",
+  "username": "prajwal2000"
+}
+
+
+2026-03-19 22:30:45,374 GET /api/game/achievements from 172.18.0.4 (user=prajwal2000) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx5FQ.SEPLA2bw2t0aTjGcppkrcQ3ENNY
+
+Request Body:
+
+
+Response Body:
+{
+  "achievements": {
+    "allUnlocked": false,
+    "fiftyPoints": false,
+    "hundredPoints": false,
+    "twoHundredPoints": false
+  }
+}
+
+
+2026-03-19 22:30:45,386 GET /api/game/player-stats from 172.18.0.4 (user=prajwal2000) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx5FQ.SEPLA2bw2t0aTjGcppkrcQ3ENNY
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 256.0,
+  "current_score": 1,
+  "games_played": 1,
+  "max_score": 256,
+  "min_score": 256,
+  "total_score": 256,
+  "username": "prajwal2000"
+}
+
+
+2026-03-19 22:31:15,395 GET /api/game/player-stats from 172.18.0.4 (user=prajwal2000) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx5FQ.SEPLA2bw2t0aTjGcppkrcQ3ENNY
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 256.0,
+  "current_score": 67,
+  "games_played": 1,
+  "max_score": 256,
+  "min_score": 256,
+  "total_score": 256,
+  "username": "prajwal2000"
+}
+
+
+2026-03-19 22:31:45,849 GET /api/game/player-stats from 172.18.0.4 (user=prajwal2000) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx5FQ.SEPLA2bw2t0aTjGcppkrcQ3ENNY
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 256.0,
+  "current_score": 67,
+  "games_played": 1,
+  "max_score": 256,
+  "min_score": 256,
+  "total_score": 256,
+  "username": "prajwal2000"
+}
+
+
+2026-03-19 22:32:15,838 GET /api/game/player-stats from 172.18.0.4 (user=prajwal2000) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx5FQ.SEPLA2bw2t0aTjGcppkrcQ3ENNY
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 256.0,
+  "current_score": 67,
+  "games_played": 1,
+  "max_score": 256,
+  "min_score": 256,
+  "total_score": 256,
+  "username": "prajwal2000"
+}
+
+
+2026-03-19 22:42:50,751 GET /api/auth/check from 172.18.0.4 (user=prajwal2000) → 404
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx5FQ.SEPLA2bw2t0aTjGcppkrcQ3ENNY
+
+Request Body:
+
+
+Response Body:
+<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+
+2026-03-19 22:43:02,412 POST /api/auth/login from 172.18.0.4 (user=prajwal2000) → 200
+Request Headers:
+Content-Type: application/json
+Content-Length: 50
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx5FQ.SEPLA2bw2t0aTjGcppkrcQ3ENNY
+
+Request Body:
+b'{"username":"prajwal2000","password":"[REDACTED]"}'
+
+Response Body:
+{
+  "message": "Login successful",
+  "username": "prajwal2000"
+}
+
+
+2026-03-19 22:43:02,450 GET /api/game/achievements from 172.18.0.4 (user=prajwal2000) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx79g.WxJMFj6tfOvpBjRzv4OpG8mS6Wc
+
+Request Body:
+
+
+Response Body:
+{
+  "achievements": {
+    "allUnlocked": false,
+    "fiftyPoints": false,
+    "hundredPoints": false,
+    "twoHundredPoints": false
+  }
+}
+
+
+2026-03-19 22:43:02,460 GET /api/game/player-stats from 172.18.0.4 (user=prajwal2000) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx79g.WxJMFj6tfOvpBjRzv4OpG8mS6Wc
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 161.5,
+  "current_score": 1,
+  "games_played": 2,
+  "max_score": 256,
+  "min_score": 67,
+  "total_score": 323,
+  "username": "prajwal2000"
+}
+
+
+2026-03-19 22:43:32,473 GET /api/game/player-stats from 172.18.0.4 (user=prajwal2000) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx79g.WxJMFj6tfOvpBjRzv4OpG8mS6Wc
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 161.5,
+  "current_score": 210,
+  "games_played": 2,
+  "max_score": 256,
+  "min_score": 67,
+  "total_score": 323,
+  "username": "prajwal2000"
+}
+
+
+2026-03-19 22:44:02,470 GET /api/game/player-stats from 172.18.0.4 (user=prajwal2000) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx79g.WxJMFj6tfOvpBjRzv4OpG8mS6Wc
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 161.5,
+  "current_score": 210,
+  "games_played": 2,
+  "max_score": 256,
+  "min_score": 67,
+  "total_score": 323,
+  "username": "prajwal2000"
+}
+
+
+2026-03-19 22:44:32,472 GET /api/game/player-stats from 172.18.0.4 (user=prajwal2000) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx79g.WxJMFj6tfOvpBjRzv4OpG8mS6Wc
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 161.5,
+  "current_score": 210,
+  "games_played": 2,
+  "max_score": 256,
+  "min_score": 67,
+  "total_score": 323,
+  "username": "prajwal2000"
+}
+
+
+2026-03-19 22:45:02,470 GET /api/game/player-stats from 172.18.0.4 (user=prajwal2000) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx79g.WxJMFj6tfOvpBjRzv4OpG8mS6Wc
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 161.5,
+  "current_score": 210,
+  "games_played": 2,
+  "max_score": 256,
+  "min_score": 67,
+  "total_score": 323,
+  "username": "prajwal2000"
+}
+
+
+2026-03-19 22:50:42,775 GET /api/auth/check from 172.18.0.4 (user=anonymous) → 404
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+Request Body:
+
+
+Response Body:
+<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+
+2026-03-19 22:51:28,501 GET /api/auth/check from 172.18.0.4 (user=anonymous) → 404
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+Request Body:
+
+
+Response Body:
+<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+
+2026-03-19 22:57:46,557 GET /api/auth/check from 172.18.0.4 (user=anonymous) → 404
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+Request Body:
+
+
+Response Body:
+<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+
+2026-03-19 22:57:55,671 POST /api/auth/login from 172.18.0.4 (user=anonymous) → 401
+Request Headers:
+Content-Type: application/json
+Content-Length: 51
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+Request Body:
+b'{"username":"prajwal2000","password":"[REDACTED]"}'
+
+Response Body:
+{
+  "error": "Invalid password"
+}
+
+
+2026-03-19 22:58:25,578 POST /api/auth/signup from 172.18.0.4 (user=testuser_new_123) → 201
+Request Headers:
+Content-Type: application/json
+Content-Length: 57
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+Request Body:
+b'{"username":"testuser_new_123","password":"[REDACTED]"}'
+
+Response Body:
+{
+  "message": "User created successfully"
+}
+
+
+2026-03-19 22:58:25,593 GET /api/game/achievements from 172.18.0.4 (user=testuser_new_123) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InRlc3R1c2VyX25ld18xMjMifQ.abx_kQ.yuEMGY-wyioVSGuZRSsutBBIs4Q
+
+Request Body:
+
+
+Response Body:
+{
+  "achievements": {
+    "allUnlocked": false,
+    "fiftyPoints": false,
+    "hundredPoints": false,
+    "twoHundredPoints": false
+  }
+}
+
+
+2026-03-19 22:58:25,602 GET /api/game/player-stats from 172.18.0.4 (user=testuser_new_123) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InRlc3R1c2VyX25ld18xMjMifQ.abx_kQ.yuEMGY-wyioVSGuZRSsutBBIs4Q
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 1,
+  "current_score": 1,
+  "games_played": 0,
+  "max_score": 1,
+  "min_score": 1,
+  "total_score": 1,
+  "username": "testuser_new_123"
+}
+
+
+2026-03-19 22:58:55,607 GET /api/game/player-stats from 172.18.0.4 (user=testuser_new_123) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InRlc3R1c2VyX25ld18xMjMifQ.abx_kQ.yuEMGY-wyioVSGuZRSsutBBIs4Q
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 1,
+  "current_score": 1,
+  "games_played": 0,
+  "max_score": 1,
+  "min_score": 1,
+  "total_score": 1,
+  "username": "testuser_new_123"
+}
+
+
+2026-03-19 22:59:25,611 GET /api/game/player-stats from 172.18.0.4 (user=testuser_new_123) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InRlc3R1c2VyX25ld18xMjMifQ.abx_kQ.yuEMGY-wyioVSGuZRSsutBBIs4Q
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 1,
+  "current_score": 1,
+  "games_played": 0,
+  "max_score": 1,
+  "min_score": 1,
+  "total_score": 1,
+  "username": "testuser_new_123"
+}
+
+
+2026-03-19 22:59:55,613 GET /api/game/player-stats from 172.18.0.4 (user=testuser_new_123) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InRlc3R1c2VyX25ld18xMjMifQ.abx_kQ.yuEMGY-wyioVSGuZRSsutBBIs4Q
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 1,
+  "current_score": 1,
+  "games_played": 0,
+  "max_score": 1,
+  "min_score": 1,
+  "total_score": 1,
+  "username": "testuser_new_123"
+}
+
+
+2026-03-19 23:00:25,609 GET /api/game/player-stats from 172.18.0.4 (user=testuser_new_123) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InRlc3R1c2VyX25ld18xMjMifQ.abx_kQ.yuEMGY-wyioVSGuZRSsutBBIs4Q
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 1,
+  "current_score": 1,
+  "games_played": 0,
+  "max_score": 1,
+  "min_score": 1,
+  "total_score": 1,
+  "username": "testuser_new_123"
+}
+
+
+2026-03-19 23:00:55,613 GET /api/game/player-stats from 172.18.0.4 (user=testuser_new_123) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InRlc3R1c2VyX25ld18xMjMifQ.abx_kQ.yuEMGY-wyioVSGuZRSsutBBIs4Q
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 1,
+  "current_score": 1,
+  "games_played": 0,
+  "max_score": 1,
+  "min_score": 1,
+  "total_score": 1,
+  "username": "testuser_new_123"
+}
+
+
+2026-03-19 23:01:24,075 GET /api/game/player-stats from 172.18.0.4 (user=testuser_new_123) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InRlc3R1c2VyX25ld18xMjMifQ.abx_kQ.yuEMGY-wyioVSGuZRSsutBBIs4Q
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 1.0,
+  "current_score": 1,
+  "games_played": 1,
+  "max_score": 1,
+  "min_score": 1,
+  "total_score": 1,
+  "username": "testuser_new_123"
+}
+
+
+2026-03-19 23:01:54,071 GET /api/game/player-stats from 172.18.0.4 (user=testuser_new_123) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InRlc3R1c2VyX25ld18xMjMifQ.abx_kQ.yuEMGY-wyioVSGuZRSsutBBIs4Q
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 1.0,
+  "current_score": 175,
+  "games_played": 1,
+  "max_score": 1,
+  "min_score": 1,
+  "total_score": 1,
+  "username": "testuser_new_123"
+}
+
+
+2026-03-19 23:02:24,075 GET /api/game/player-stats from 172.18.0.4 (user=testuser_new_123) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InRlc3R1c2VyX25ld18xMjMifQ.abx_kQ.yuEMGY-wyioVSGuZRSsutBBIs4Q
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 1.0,
+  "current_score": 175,
+  "games_played": 1,
+  "max_score": 1,
+  "min_score": 1,
+  "total_score": 1,
+  "username": "testuser_new_123"
+}
+
+
+2026-03-19 23:02:54,076 GET /api/game/player-stats from 172.18.0.4 (user=testuser_new_123) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InRlc3R1c2VyX25ld18xMjMifQ.abx_kQ.yuEMGY-wyioVSGuZRSsutBBIs4Q
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 1.0,
+  "current_score": 261,
+  "games_played": 1,
+  "max_score": 1,
+  "min_score": 1,
+  "total_score": 1,
+  "username": "testuser_new_123"
+}
+
+
+2026-03-19 23:03:06,617 POST /api/auth/logout from 172.18.0.4 (user=testuser_new_123) → 405
+Request Headers:
+Content-Type: application/json
+Content-Length: 2
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InRlc3R1c2VyX25ld18xMjMifQ.abx_kQ.yuEMGY-wyioVSGuZRSsutBBIs4Q
+
+Request Body:
+{}
+
+Response Body:
+<!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+
+2026-03-19 23:03:07,146 POST /api/auth/logout from 172.18.0.4 (user=testuser_new_123) → 405
+Request Headers:
+Content-Type: application/json
+Content-Length: 2
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InRlc3R1c2VyX25ld18xMjMifQ.abx_kQ.yuEMGY-wyioVSGuZRSsutBBIs4Q
+
+Request Body:
+{}
+
+Response Body:
+<!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+
+2026-03-19 23:03:07,785 GET /api/auth/profile from 172.18.0.4 (user=testuser_new_123) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InRlc3R1c2VyX25ld18xMjMifQ.abx_kQ.yuEMGY-wyioVSGuZRSsutBBIs4Q
+
+Request Body:
+
+
+Response Body:
+{
+  "avatar": null
+}
+
+
+2026-03-19 23:03:08,367 POST /api/auth/logout from 172.18.0.4 (user=testuser_new_123) → 405
+Request Headers:
+Content-Type: application/json
+Content-Length: 2
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InRlc3R1c2VyX25ld18xMjMifQ.abx_kQ.yuEMGY-wyioVSGuZRSsutBBIs4Q
+
+Request Body:
+{}
+
+Response Body:
+<!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+
+2026-03-19 23:03:08,830 POST /api/auth/logout from 172.18.0.4 (user=testuser_new_123) → 405
+Request Headers:
+Content-Type: application/json
+Content-Length: 2
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InRlc3R1c2VyX25ld18xMjMifQ.abx_kQ.yuEMGY-wyioVSGuZRSsutBBIs4Q
+
+Request Body:
+{}
+
+Response Body:
+<!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+
+2026-03-19 23:03:09,382 POST /api/auth/logout from 172.18.0.4 (user=testuser_new_123) → 405
+Request Headers:
+Content-Type: application/json
+Content-Length: 2
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InRlc3R1c2VyX25ld18xMjMifQ.abx_kQ.yuEMGY-wyioVSGuZRSsutBBIs4Q
+
+Request Body:
+{}
+
+Response Body:
+<!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+
+2026-03-19 23:03:24,569 POST /api/auth/logout from 172.18.0.4 (user=testuser_new_123) → 405
+Request Headers:
+Content-Type: application/json
+Content-Length: 2
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InRlc3R1c2VyX25ld18xMjMifQ.abx_kQ.yuEMGY-wyioVSGuZRSsutBBIs4Q
+
+Request Body:
+{}
+
+Response Body:
+<!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+
+2026-03-19 23:04:07,720 POST /api/auth/logout from 172.18.0.4 (user=testuser_new_123) → 405
+Request Headers:
+Content-Type: application/json
+Content-Length: 2
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InRlc3R1c2VyX25ld18xMjMifQ.abx_kQ.yuEMGY-wyioVSGuZRSsutBBIs4Q
+
+Request Body:
+{}
+
+Response Body:
+<!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+
+2026-03-19 23:08:18,053 POST /api/auth/logout from 172.18.0.4 (user=anonymous) → 200
+Request Headers:
+Content-Type: application/json
+Content-Length: 2
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InRlc3R1c2VyX25ld18xMjMifQ.abx_kQ.yuEMGY-wyioVSGuZRSsutBBIs4Q
+
+Request Body:
+{}
+
+Response Body:
+{
+  "message": "Logged out successfully"
+}
+
+
+2026-03-19 23:09:56,913 GET /api/auth/check from 172.18.0.4 (user=anonymous) → 404
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+Request Body:
+
+
+Response Body:
+<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+
+2026-03-19 23:10:10,921 POST /api/auth/signup from 172.18.0.4 (user=Prajwal91) → 201
+Request Headers:
+Content-Type: application/json
+Content-Length: 50
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+Request Body:
+b'{"username":"Prajwal91","password":"[REDACTED]"}'
+
+Response Body:
+{
+  "message": "User created successfully"
+}
+
+
+2026-03-19 23:10:10,933 GET /api/game/achievements from 172.18.0.4 (user=Prajwal91) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6IlByYWp3YWw5MSJ9.abyCUg.rlMc9bCkFi4zdNha0q0uTd4W4RQ
+
+Request Body:
+
+
+Response Body:
+{
+  "achievements": {
+    "allUnlocked": false,
+    "fiftyPoints": false,
+    "hundredPoints": false,
+    "twoHundredPoints": false
+  }
+}
+
+
+2026-03-19 23:10:10,948 GET /api/game/player-stats from 172.18.0.4 (user=Prajwal91) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6IlByYWp3YWw5MSJ9.abyCUg.rlMc9bCkFi4zdNha0q0uTd4W4RQ
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 1,
+  "current_score": 1,
+  "games_played": 0,
+  "max_score": 1,
+  "min_score": 1,
+  "total_score": 1,
+  "username": "Prajwal91"
+}
+
+
+2026-03-19 23:10:33,149 POST /api/auth/logout from 172.18.0.4 (user=anonymous) → 200
+Request Headers:
+Content-Type: application/json
+Content-Length: 2
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6IlByYWp3YWw5MSJ9.abyCUg.rlMc9bCkFi4zdNha0q0uTd4W4RQ
+
+Request Body:
+{}
+
+Response Body:
+{
+  "message": "Logged out successfully"
+}
+
+
+2026-03-19 23:10:40,671 POST /api/auth/login from 172.18.0.4 (user=anonymous) → 401
+Request Headers:
+Content-Type: application/json
+Content-Length: 50
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+Request Body:
+b'{"username":"prajwal91","password":"[REDACTED]"}'
+
+Response Body:
+{
+  "error": "Invalid password"
+}
+
+
+2026-03-19 23:10:47,394 POST /api/auth/login from 172.18.0.4 (user=anonymous) → 401
+Request Headers:
+Content-Type: application/json
+Content-Length: 50
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+Request Body:
+b'{"username":"prajwal91","password":"[REDACTED]"}'
+
+Response Body:
+{
+  "error": "Invalid password"
+}
+
+
+2026-03-19 23:10:53,736 POST /api/auth/login from 172.18.0.4 (user=anonymous) → 401
+Request Headers:
+Content-Type: application/json
+Content-Length: 50
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+Request Body:
+b'{"username":"prajwal91","password":"[REDACTED]"}'
+
+Response Body:
+{
+  "error": "Invalid password"
+}
+
+
+2026-03-19 23:14:58,861 GET /api/auth/check from 172.18.0.4 (user=anonymous) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+Request Body:
+
+
+Response Body:
+{
+  "authenticated": false
+}
+
+
+2026-03-19 23:15:06,909 POST /api/auth/signup from 172.18.0.4 (user=anonymous) → 409
+Request Headers:
+Content-Type: application/json
+Content-Length: 50
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+Request Body:
+b'{"username":"prajwal91","password":"[REDACTED]"}'
+
+Response Body:
+{
+  "error": "Username already exists"
+}
+
+
+2026-03-19 23:15:14,750 POST /api/auth/login from 172.18.0.4 (user=anonymous) → 401
+Request Headers:
+Content-Type: application/json
+Content-Length: 50
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+Request Body:
+b'{"username":"prajwal91","password":"[REDACTED]"}'
+
+Response Body:
+{
+  "error": "Invalid password"
+}
+
+
+2026-03-19 23:15:19,405 POST /api/auth/login from 172.18.0.4 (user=anonymous) → 401
+Request Headers:
+Content-Type: application/json
+Content-Length: 47
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+Request Body:
+b'{"username":"prajwal91","password":"[REDACTED]"}'
+
+Response Body:
+{
+  "error": "Invalid password"
+}
+
+
+2026-03-19 23:16:40,718 GET /api/auth/check from 172.18.0.4 (user=anonymous) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+Request Body:
+
+
+Response Body:
+{
+  "authenticated": false
+}
+
+
+2026-03-19 23:16:48,406 POST /api/auth/signup from 172.18.0.4 (user=prajwal91) → 201
+Request Headers:
+Content-Type: application/json
+Content-Length: 50
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+Request Body:
+b'{"username":"prajwal91","password":"[REDACTED]"}'
+
+Response Body:
+{
+  "message": "User created successfully"
+}
+
+
+2026-03-19 23:16:48,418 GET /api/game/achievements from 172.18.0.4 (user=prajwal91) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWw5MSJ9.abyD4A.4Lz6KOsbNhOkl0oOb30F8AV1rq4
+
+Request Body:
+
+
+Response Body:
+{
+  "achievements": {
+    "allUnlocked": false,
+    "fiftyPoints": false,
+    "hundredPoints": false,
+    "twoHundredPoints": false
+  }
+}
+
+
+2026-03-19 23:16:48,429 GET /api/game/player-stats from 172.18.0.4 (user=prajwal91) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWw5MSJ9.abyD4A.4Lz6KOsbNhOkl0oOb30F8AV1rq4
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 1,
+  "current_score": 1,
+  "games_played": 0,
+  "max_score": 1,
+  "min_score": 1,
+  "total_score": 1,
+  "username": "prajwal91"
+}
+
+
+2026-03-19 23:17:18,441 GET /api/game/player-stats from 172.18.0.4 (user=prajwal91) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWw5MSJ9.abyD4A.4Lz6KOsbNhOkl0oOb30F8AV1rq4
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 128,
+  "current_score": 128,
+  "games_played": 0,
+  "max_score": 128,
+  "min_score": 128,
+  "total_score": 128,
+  "username": "prajwal91"
+}
+
+
+2026-03-19 23:17:48,445 GET /api/game/player-stats from 172.18.0.4 (user=prajwal91) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWw5MSJ9.abyD4A.4Lz6KOsbNhOkl0oOb30F8AV1rq4
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 128,
+  "current_score": 128,
+  "games_played": 0,
+  "max_score": 128,
+  "min_score": 128,
+  "total_score": 128,
+  "username": "prajwal91"
+}
+
+
+2026-03-19 23:18:18,442 GET /api/game/player-stats from 172.18.0.4 (user=prajwal91) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWw5MSJ9.abyD4A.4Lz6KOsbNhOkl0oOb30F8AV1rq4
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 128,
+  "current_score": 128,
+  "games_played": 0,
+  "max_score": 128,
+  "min_score": 128,
+  "total_score": 128,
+  "username": "prajwal91"
+}
+
+
+2026-03-19 23:18:48,443 GET /api/game/player-stats from 172.18.0.4 (user=prajwal91) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWw5MSJ9.abyD4A.4Lz6KOsbNhOkl0oOb30F8AV1rq4
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 128,
+  "current_score": 128,
+  "games_played": 0,
+  "max_score": 128,
+  "min_score": 128,
+  "total_score": 128,
+  "username": "prajwal91"
+}
+
+
+2026-03-19 23:19:18,443 GET /api/game/player-stats from 172.18.0.4 (user=prajwal91) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWw5MSJ9.abyD4A.4Lz6KOsbNhOkl0oOb30F8AV1rq4
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 128,
+  "current_score": 128,
+  "games_played": 0,
+  "max_score": 128,
+  "min_score": 128,
+  "total_score": 128,
+  "username": "prajwal91"
+}
+
+
+2026-03-19 23:19:46,749 GET /api/auth/check from 172.18.0.4 (user=prajwal91) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWw5MSJ9.abyD4A.4Lz6KOsbNhOkl0oOb30F8AV1rq4
+
+Request Body:
+
+
+Response Body:
+{
+  "authenticated": true,
+  "username": "prajwal91"
+}
+
+
+2026-03-19 23:19:46,833 GET /api/game/achievements from 172.18.0.4 (user=prajwal91) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWw5MSJ9.abyD4A.4Lz6KOsbNhOkl0oOb30F8AV1rq4
+
+Request Body:
+
+
+Response Body:
+{
+  "achievements": {
+    "allUnlocked": false,
+    "fiftyPoints": false,
+    "hundredPoints": false,
+    "twoHundredPoints": false
+  }
+}
+
+
+2026-03-19 23:19:46,844 GET /api/game/player-stats from 172.18.0.4 (user=prajwal91) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWw5MSJ9.abyD4A.4Lz6KOsbNhOkl0oOb30F8AV1rq4
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 128.0,
+  "current_score": 1,
+  "games_played": 1,
+  "max_score": 128,
+  "min_score": 128,
+  "total_score": 128,
+  "username": "prajwal91"
+}
+
+
+2026-03-19 23:19:56,681 GET /api/auth/check from 172.18.0.4 (user=prajwal91) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWw5MSJ9.abyD4A.4Lz6KOsbNhOkl0oOb30F8AV1rq4
+
+Request Body:
+
+
+Response Body:
+{
+  "authenticated": true,
+  "username": "prajwal91"
+}
+
+
+2026-03-19 23:19:56,690 GET /api/game/achievements from 172.18.0.4 (user=prajwal91) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWw5MSJ9.abyD4A.4Lz6KOsbNhOkl0oOb30F8AV1rq4
+
+Request Body:
+
+
+Response Body:
+{
+  "achievements": {
+    "allUnlocked": false,
+    "fiftyPoints": false,
+    "hundredPoints": false,
+    "twoHundredPoints": false
+  }
+}
+
+
+2026-03-19 23:19:56,701 GET /api/game/player-stats from 172.18.0.4 (user=prajwal91) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWw5MSJ9.abyD4A.4Lz6KOsbNhOkl0oOb30F8AV1rq4
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 89.5,
+  "current_score": 52,
+  "games_played": 2,
+  "max_score": 128,
+  "min_score": 51,
+  "total_score": 179,
+  "username": "prajwal91"
+}
+
+
+2026-03-19 23:19:57,718 POST /api/auth/logout from 172.18.0.4 (user=anonymous) → 200
+Request Headers:
+Content-Type: application/json
+Content-Length: 2
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWw5MSJ9.abyD4A.4Lz6KOsbNhOkl0oOb30F8AV1rq4
+
+Request Body:
+{}
+
+Response Body:
+{
+  "message": "Logged out successfully"
+}
+
+
+2026-03-19 23:20:04,293 POST /api/auth/login from 172.18.0.4 (user=prajwal91) → 200
+Request Headers:
+Content-Type: application/json
+Content-Length: 50
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+Request Body:
+b'{"username":"prajwal91","password":"[REDACTED]"}'
+
+Response Body:
+{
+  "message": "Login successful",
+  "username": "prajwal91"
+}
+
+
+2026-03-19 23:20:04,307 GET /api/game/achievements from 172.18.0.4 (user=prajwal91) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWw5MSJ9.abyEpA._6-roC4htQ_QlNL4c0Vkq5puP80
+
+Request Body:
+
+
+Response Body:
+{
+  "achievements": {
+    "allUnlocked": false,
+    "fiftyPoints": false,
+    "hundredPoints": false,
+    "twoHundredPoints": false
+  }
+}
+
+
+2026-03-19 23:20:04,311 GET /api/game/player-stats from 172.18.0.4 (user=prajwal91) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWw5MSJ9.abyEpA._6-roC4htQ_QlNL4c0Vkq5puP80
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 77.0,
+  "current_score": 53,
+  "games_played": 3,
+  "max_score": 128,
+  "min_score": 51,
+  "total_score": 231,
+  "username": "prajwal91"
+}
+
+
+2026-03-19 23:20:34,323 GET /api/game/player-stats from 172.18.0.4 (user=prajwal91) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWw5MSJ9.abyEpA._6-roC4htQ_QlNL4c0Vkq5puP80
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 77.0,
+  "current_score": 82,
+  "games_played": 3,
+  "max_score": 128,
+  "min_score": 51,
+  "total_score": 231,
+  "username": "prajwal91"
+}
+
+
+2026-03-19 23:21:04,319 GET /api/game/player-stats from 172.18.0.4 (user=prajwal91) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWw5MSJ9.abyEpA._6-roC4htQ_QlNL4c0Vkq5puP80
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 77.0,
+  "current_score": 82,
+  "games_played": 3,
+  "max_score": 128,
+  "min_score": 51,
+  "total_score": 231,
+  "username": "prajwal91"
+}
+
+
+2026-03-19 23:21:34,325 GET /api/game/player-stats from 172.18.0.4 (user=prajwal91) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWw5MSJ9.abyEpA._6-roC4htQ_QlNL4c0Vkq5puP80
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 77.0,
+  "current_score": 82,
+  "games_played": 3,
+  "max_score": 128,
+  "min_score": 51,
+  "total_score": 231,
+  "username": "prajwal91"
+}
+
+
+2026-03-19 23:22:04,318 GET /api/game/player-stats from 172.18.0.4 (user=prajwal91) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWw5MSJ9.abyEpA._6-roC4htQ_QlNL4c0Vkq5puP80
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 77.0,
+  "current_score": 82,
+  "games_played": 3,
+  "max_score": 128,
+  "min_score": 51,
+  "total_score": 231,
+  "username": "prajwal91"
+}
+
+
+2026-03-19 23:22:34,325 GET /api/game/player-stats from 172.18.0.4 (user=prajwal91) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWw5MSJ9.abyEpA._6-roC4htQ_QlNL4c0Vkq5puP80
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 77.0,
+  "current_score": 82,
+  "games_played": 3,
+  "max_score": 128,
+  "min_score": 51,
+  "total_score": 231,
+  "username": "prajwal91"
+}
+
+
+2026-03-19 23:23:35,413 GET /api/auth/check from 172.18.0.4 (user=prajwal2000) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx79g.WxJMFj6tfOvpBjRzv4OpG8mS6Wc
+
+Request Body:
+
+
+Response Body:
+{
+  "authenticated": true,
+  "username": "prajwal2000"
+}
+
+
+2026-03-19 23:23:35,448 GET /api/game/achievements from 172.18.0.4 (user=prajwal2000) → 404
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx79g.WxJMFj6tfOvpBjRzv4OpG8mS6Wc
+
+Request Body:
+
+
+Response Body:
+{
+  "error": "User not found"
+}
+
+
+2026-03-19 23:23:35,474 GET /api/game/player-stats from 172.18.0.4 (user=prajwal2000) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx79g.WxJMFj6tfOvpBjRzv4OpG8mS6Wc
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 1,
+  "current_score": 1,
+  "games_played": 0,
+  "max_score": 1,
+  "min_score": 1,
+  "total_score": 1,
+  "username": "prajwal2000"
+}
+
+
+2026-03-19 23:23:48,618 POST /api/auth/logout from 172.18.0.4 (user=anonymous) → 200
+Request Headers:
+Content-Type: application/json
+Content-Length: 2
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWwyMDAwIn0.abx79g.WxJMFj6tfOvpBjRzv4OpG8mS6Wc
+
+Request Body:
+{}
+
+Response Body:
+{
+  "message": "Logged out successfully"
+}
+
+
+2026-03-19 23:23:52,523 POST /api/auth/login from 172.18.0.4 (user=anonymous) → 401
+Request Headers:
+Content-Type: application/json
+Content-Length: 50
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+Request Body:
+b'{"username":"fdfdfdfddfd","password":"[REDACTED]"}'
+
+Response Body:
+{
+  "error": "Invalid username"
+}
+
+
+2026-03-19 23:23:58,969 POST /api/auth/login from 172.18.0.4 (user=prajwal91) → 200
+Request Headers:
+Content-Type: application/json
+Content-Length: 50
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+Request Body:
+b'{"username":"prajwal91","password":"[REDACTED]"}'
+
+Response Body:
+{
+  "message": "Login successful",
+  "username": "prajwal91"
+}
+
+
+2026-03-19 23:23:58,992 GET /api/game/achievements from 172.18.0.4 (user=prajwal91) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWw5MSJ9.abyFjg.Dt0TbqWKVPGdWRUttckjWReep3Q
+
+Request Body:
+
+
+Response Body:
+{
+  "achievements": {
+    "allUnlocked": false,
+    "fiftyPoints": false,
+    "hundredPoints": false,
+    "twoHundredPoints": false
+  }
+}
+
+
+2026-03-19 23:23:58,998 GET /api/game/player-stats from 172.18.0.4 (user=prajwal91) → 200
+Request Headers:
+Content-Type: text/plain
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWw5MSJ9.abyFjg.Dt0TbqWKVPGdWRUttckjWReep3Q
+
+Request Body:
+
+
+Response Body:
+{
+  "average_score": 78.25,
+  "current_score": 1,
+  "games_played": 4,
+  "max_score": 128,
+  "min_score": 51,
+  "total_score": 313,
+  "username": "prajwal91"
+}
+
+
+2026-03-19 23:24:21,863 POST /api/auth/logout from 172.18.0.4 (user=anonymous) → 200
+Request Headers:
+Content-Type: application/json
+Content-Length: 2
+Host: localhost
+X-Real-Ip: 192.168.65.1
+Sec-Ch-Ua-Platform: "macOS"
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua: "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+Dnt: 1
+Sec-Ch-Ua-Mobile: ?0
+Origin: http://localhost:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: session=eyJ1c2VybmFtZSI6InByYWp3YWw5MSJ9.abyFjg.Dt0TbqWKVPGdWRUttckjWReep3Q
+
+Request Body:
+{}
+
+Response Body:
+{
+  "message": "Logged out successfully"
+}
+
+

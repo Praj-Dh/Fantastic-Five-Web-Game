@@ -138,8 +138,11 @@ export default function Profile({ username, backToGame }) {
                   width: '100%',    // or e.g. 300px
                   maxWidth: 300,
                   height: 300,
-                  background: '#333',
-                  margin: '1rem auto'
+                  background: '#e8eef5',
+                  margin: '1rem auto',
+                  borderRadius: '10px',
+                  border: '1px solid var(--border-color)',
+                  overflow: 'hidden'
                 }}
               >
                 <Cropper

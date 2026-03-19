@@ -155,3 +155,210 @@
 2025-05-05 07:29:44,965 [INFO] 172.19.0.4 GET /api/game/player-stats yash2
 2025-05-05 07:29:58,627 [INFO] <SecureCookieSession {'username': 'yash2'}> - poiuytrewq
 2025-05-05 07:29:58,628 [INFO] 172.19.0.4 GET /api/auth/check yash2
+2026-03-19 22:20:17,601 [INFO] <SecureCookieSession {}> - poiuytrewq
+2026-03-19 22:20:17,602 [INFO] 172.18.0.4 GET /api/auth/check anonymous
+2026-03-19 22:20:31,176 [INFO] <SecureCookieSession {}> - poiuytrewq
+2026-03-19 22:20:31,177 [INFO] 172.18.0.4 POST /api/auth/login anonymous
+2026-03-19 22:20:31,397 [INFO] prajwal2000 successfully logged in
+2026-03-19 22:20:31,411 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 22:20:31,411 [INFO] 172.18.0.4 GET /api/game/achievements prajwal2000
+2026-03-19 22:20:31,423 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 22:20:31,423 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal2000
+2026-03-19 22:21:01,433 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 22:21:01,433 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal2000
+2026-03-19 22:21:18,826 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 22:21:18,826 [INFO] 172.18.0.4 GET /api/auth/profile prajwal2000
+2026-03-19 22:21:19,991 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 22:21:19,992 [INFO] 172.18.0.4 POST /api/auth/logout prajwal2000
+2026-03-19 22:21:21,691 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 22:21:21,691 [INFO] 172.18.0.4 POST /api/auth/logout prajwal2000
+2026-03-19 22:30:39,012 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 22:30:39,013 [INFO] 172.18.0.4 GET /api/auth/check prajwal2000
+2026-03-19 22:30:45,122 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 22:30:45,123 [INFO] 172.18.0.4 POST /api/auth/login prajwal2000
+2026-03-19 22:30:45,343 [INFO] prajwal2000 successfully logged in
+2026-03-19 22:30:45,373 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 22:30:45,373 [INFO] 172.18.0.4 GET /api/game/achievements prajwal2000
+2026-03-19 22:30:45,384 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 22:30:45,384 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal2000
+2026-03-19 22:31:15,391 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 22:31:15,392 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal2000
+2026-03-19 22:31:45,839 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 22:31:45,840 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal2000
+2026-03-19 22:32:15,835 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 22:32:15,835 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal2000
+2026-03-19 22:42:50,749 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 22:42:50,749 [INFO] 172.18.0.4 GET /api/auth/check prajwal2000
+2026-03-19 22:43:02,212 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 22:43:02,212 [INFO] 172.18.0.4 POST /api/auth/login prajwal2000
+2026-03-19 22:43:02,411 [INFO] prajwal2000 successfully logged in
+2026-03-19 22:43:02,449 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 22:43:02,449 [INFO] 172.18.0.4 GET /api/game/achievements prajwal2000
+2026-03-19 22:43:02,459 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 22:43:02,459 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal2000
+2026-03-19 22:43:32,470 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 22:43:32,470 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal2000
+2026-03-19 22:44:02,465 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 22:44:02,466 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal2000
+2026-03-19 22:44:32,469 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 22:44:32,470 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal2000
+2026-03-19 22:45:02,465 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 22:45:02,466 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal2000
+2026-03-19 22:50:42,773 [INFO] <SecureCookieSession {}> - poiuytrewq
+2026-03-19 22:50:42,773 [INFO] 172.18.0.4 GET /api/auth/check anonymous
+2026-03-19 22:51:28,500 [INFO] <SecureCookieSession {}> - poiuytrewq
+2026-03-19 22:51:28,501 [INFO] 172.18.0.4 GET /api/auth/check anonymous
+2026-03-19 22:57:46,554 [INFO] <SecureCookieSession {}> - poiuytrewq
+2026-03-19 22:57:46,555 [INFO] 172.18.0.4 GET /api/auth/check anonymous
+2026-03-19 22:57:55,457 [INFO] <SecureCookieSession {}> - poiuytrewq
+2026-03-19 22:57:55,458 [INFO] 172.18.0.4 POST /api/auth/login anonymous
+2026-03-19 22:57:55,671 [INFO] prajwal2000 attempted to login, but password does not match
+2026-03-19 22:58:25,357 [INFO] <SecureCookieSession {}> - poiuytrewq
+2026-03-19 22:58:25,357 [INFO] 172.18.0.4 POST /api/auth/signup anonymous
+2026-03-19 22:58:25,577 [INFO] testuser_new_123 successfully signed up
+2026-03-19 22:58:25,592 [INFO] <SecureCookieSession {'username': 'testuser_new_123'}> - poiuytrewq
+2026-03-19 22:58:25,592 [INFO] 172.18.0.4 GET /api/game/achievements testuser_new_123
+2026-03-19 22:58:25,601 [INFO] <SecureCookieSession {'username': 'testuser_new_123'}> - poiuytrewq
+2026-03-19 22:58:25,601 [INFO] 172.18.0.4 GET /api/game/player-stats testuser_new_123
+2026-03-19 22:58:55,605 [INFO] <SecureCookieSession {'username': 'testuser_new_123'}> - poiuytrewq
+2026-03-19 22:58:55,606 [INFO] 172.18.0.4 GET /api/game/player-stats testuser_new_123
+2026-03-19 22:59:25,608 [INFO] <SecureCookieSession {'username': 'testuser_new_123'}> - poiuytrewq
+2026-03-19 22:59:25,608 [INFO] 172.18.0.4 GET /api/game/player-stats testuser_new_123
+2026-03-19 22:59:55,610 [INFO] <SecureCookieSession {'username': 'testuser_new_123'}> - poiuytrewq
+2026-03-19 22:59:55,611 [INFO] 172.18.0.4 GET /api/game/player-stats testuser_new_123
+2026-03-19 23:00:25,606 [INFO] <SecureCookieSession {'username': 'testuser_new_123'}> - poiuytrewq
+2026-03-19 23:00:25,607 [INFO] 172.18.0.4 GET /api/game/player-stats testuser_new_123
+2026-03-19 23:00:55,610 [INFO] <SecureCookieSession {'username': 'testuser_new_123'}> - poiuytrewq
+2026-03-19 23:00:55,611 [INFO] 172.18.0.4 GET /api/game/player-stats testuser_new_123
+2026-03-19 23:01:24,073 [INFO] <SecureCookieSession {'username': 'testuser_new_123'}> - poiuytrewq
+2026-03-19 23:01:24,074 [INFO] 172.18.0.4 GET /api/game/player-stats testuser_new_123
+2026-03-19 23:01:54,068 [INFO] <SecureCookieSession {'username': 'testuser_new_123'}> - poiuytrewq
+2026-03-19 23:01:54,069 [INFO] 172.18.0.4 GET /api/game/player-stats testuser_new_123
+2026-03-19 23:02:24,071 [INFO] <SecureCookieSession {'username': 'testuser_new_123'}> - poiuytrewq
+2026-03-19 23:02:24,072 [INFO] 172.18.0.4 GET /api/game/player-stats testuser_new_123
+2026-03-19 23:02:54,073 [INFO] <SecureCookieSession {'username': 'testuser_new_123'}> - poiuytrewq
+2026-03-19 23:02:54,073 [INFO] 172.18.0.4 GET /api/game/player-stats testuser_new_123
+2026-03-19 23:03:06,615 [INFO] <SecureCookieSession {'username': 'testuser_new_123'}> - poiuytrewq
+2026-03-19 23:03:06,615 [INFO] 172.18.0.4 POST /api/auth/logout testuser_new_123
+2026-03-19 23:03:07,145 [INFO] <SecureCookieSession {'username': 'testuser_new_123'}> - poiuytrewq
+2026-03-19 23:03:07,146 [INFO] 172.18.0.4 POST /api/auth/logout testuser_new_123
+2026-03-19 23:03:07,782 [INFO] <SecureCookieSession {'username': 'testuser_new_123'}> - poiuytrewq
+2026-03-19 23:03:07,783 [INFO] 172.18.0.4 GET /api/auth/profile testuser_new_123
+2026-03-19 23:03:08,365 [INFO] <SecureCookieSession {'username': 'testuser_new_123'}> - poiuytrewq
+2026-03-19 23:03:08,365 [INFO] 172.18.0.4 POST /api/auth/logout testuser_new_123
+2026-03-19 23:03:08,829 [INFO] <SecureCookieSession {'username': 'testuser_new_123'}> - poiuytrewq
+2026-03-19 23:03:08,829 [INFO] 172.18.0.4 POST /api/auth/logout testuser_new_123
+2026-03-19 23:03:09,381 [INFO] <SecureCookieSession {'username': 'testuser_new_123'}> - poiuytrewq
+2026-03-19 23:03:09,381 [INFO] 172.18.0.4 POST /api/auth/logout testuser_new_123
+2026-03-19 23:03:24,566 [INFO] <SecureCookieSession {'username': 'testuser_new_123'}> - poiuytrewq
+2026-03-19 23:03:24,567 [INFO] 172.18.0.4 POST /api/auth/logout testuser_new_123
+2026-03-19 23:04:07,717 [INFO] <SecureCookieSession {'username': 'testuser_new_123'}> - poiuytrewq
+2026-03-19 23:04:07,719 [INFO] 172.18.0.4 POST /api/auth/logout testuser_new_123
+2026-03-19 23:08:18,051 [INFO] <SecureCookieSession {'username': 'testuser_new_123'}> - poiuytrewq
+2026-03-19 23:08:18,052 [INFO] 172.18.0.4 POST /api/auth/logout testuser_new_123
+2026-03-19 23:08:18,052 [INFO] testuser_new_123 logged out
+2026-03-19 23:09:56,912 [INFO] <SecureCookieSession {}> - poiuytrewq
+2026-03-19 23:09:56,912 [INFO] 172.18.0.4 GET /api/auth/check anonymous
+2026-03-19 23:10:10,702 [INFO] <SecureCookieSession {}> - poiuytrewq
+2026-03-19 23:10:10,703 [INFO] 172.18.0.4 POST /api/auth/signup anonymous
+2026-03-19 23:10:10,921 [INFO] Prajwal91 successfully signed up
+2026-03-19 23:10:10,932 [INFO] <SecureCookieSession {'username': 'Prajwal91'}> - poiuytrewq
+2026-03-19 23:10:10,932 [INFO] 172.18.0.4 GET /api/game/achievements Prajwal91
+2026-03-19 23:10:10,947 [INFO] <SecureCookieSession {'username': 'Prajwal91'}> - poiuytrewq
+2026-03-19 23:10:10,947 [INFO] 172.18.0.4 GET /api/game/player-stats Prajwal91
+2026-03-19 23:10:33,148 [INFO] <SecureCookieSession {'username': 'Prajwal91'}> - poiuytrewq
+2026-03-19 23:10:33,148 [INFO] 172.18.0.4 POST /api/auth/logout Prajwal91
+2026-03-19 23:10:33,149 [INFO] Prajwal91 logged out
+2026-03-19 23:10:40,457 [INFO] <SecureCookieSession {}> - poiuytrewq
+2026-03-19 23:10:40,457 [INFO] 172.18.0.4 POST /api/auth/login anonymous
+2026-03-19 23:10:40,671 [INFO] prajwal91 attempted to login, but password does not match
+2026-03-19 23:10:47,169 [INFO] <SecureCookieSession {}> - poiuytrewq
+2026-03-19 23:10:47,169 [INFO] 172.18.0.4 POST /api/auth/login anonymous
+2026-03-19 23:10:47,393 [INFO] prajwal91 attempted to login, but password does not match
+2026-03-19 23:10:53,521 [INFO] <SecureCookieSession {}> - poiuytrewq
+2026-03-19 23:10:53,522 [INFO] 172.18.0.4 POST /api/auth/login anonymous
+2026-03-19 23:10:53,736 [INFO] prajwal91 attempted to login, but password does not match
+2026-03-19 23:14:58,860 [INFO] <SecureCookieSession {}> - poiuytrewq
+2026-03-19 23:14:58,861 [INFO] 172.18.0.4 GET /api/auth/check anonymous
+2026-03-19 23:15:06,899 [INFO] <SecureCookieSession {}> - poiuytrewq
+2026-03-19 23:15:06,900 [INFO] 172.18.0.4 POST /api/auth/signup anonymous
+2026-03-19 23:15:06,907 [INFO] user attempted to sign up, but username already exists
+2026-03-19 23:15:14,531 [INFO] <SecureCookieSession {}> - poiuytrewq
+2026-03-19 23:15:14,532 [INFO] 172.18.0.4 POST /api/auth/login anonymous
+2026-03-19 23:15:14,749 [INFO] prajwal91 attempted to login, but password does not match
+2026-03-19 23:15:19,188 [INFO] <SecureCookieSession {}> - poiuytrewq
+2026-03-19 23:15:19,189 [INFO] 172.18.0.4 POST /api/auth/login anonymous
+2026-03-19 23:15:19,404 [INFO] prajwal91 attempted to login, but password does not match
+2026-03-19 23:16:40,717 [INFO] <SecureCookieSession {}> - poiuytrewq
+2026-03-19 23:16:40,717 [INFO] 172.18.0.4 GET /api/auth/check anonymous
+2026-03-19 23:16:48,187 [INFO] <SecureCookieSession {}> - poiuytrewq
+2026-03-19 23:16:48,188 [INFO] 172.18.0.4 POST /api/auth/signup anonymous
+2026-03-19 23:16:48,405 [INFO] prajwal91 successfully signed up
+2026-03-19 23:16:48,416 [INFO] <SecureCookieSession {'username': 'prajwal91'}> - poiuytrewq
+2026-03-19 23:16:48,417 [INFO] 172.18.0.4 GET /api/game/achievements prajwal91
+2026-03-19 23:16:48,428 [INFO] <SecureCookieSession {'username': 'prajwal91'}> - poiuytrewq
+2026-03-19 23:16:48,429 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal91
+2026-03-19 23:17:18,437 [INFO] <SecureCookieSession {'username': 'prajwal91'}> - poiuytrewq
+2026-03-19 23:17:18,438 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal91
+2026-03-19 23:17:48,439 [INFO] <SecureCookieSession {'username': 'prajwal91'}> - poiuytrewq
+2026-03-19 23:17:48,439 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal91
+2026-03-19 23:18:18,439 [INFO] <SecureCookieSession {'username': 'prajwal91'}> - poiuytrewq
+2026-03-19 23:18:18,440 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal91
+2026-03-19 23:18:48,439 [INFO] <SecureCookieSession {'username': 'prajwal91'}> - poiuytrewq
+2026-03-19 23:18:48,439 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal91
+2026-03-19 23:19:18,440 [INFO] <SecureCookieSession {'username': 'prajwal91'}> - poiuytrewq
+2026-03-19 23:19:18,441 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal91
+2026-03-19 23:19:46,747 [INFO] <SecureCookieSession {'username': 'prajwal91'}> - poiuytrewq
+2026-03-19 23:19:46,748 [INFO] 172.18.0.4 GET /api/auth/check prajwal91
+2026-03-19 23:19:46,789 [INFO] <SecureCookieSession {'username': 'prajwal91'}> - poiuytrewq
+2026-03-19 23:19:46,789 [INFO] 172.18.0.4 GET /api/game/achievements prajwal91
+2026-03-19 23:19:46,843 [INFO] <SecureCookieSession {'username': 'prajwal91'}> - poiuytrewq
+2026-03-19 23:19:46,843 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal91
+2026-03-19 23:19:56,680 [INFO] <SecureCookieSession {'username': 'prajwal91'}> - poiuytrewq
+2026-03-19 23:19:56,681 [INFO] 172.18.0.4 GET /api/auth/check prajwal91
+2026-03-19 23:19:56,688 [INFO] <SecureCookieSession {'username': 'prajwal91'}> - poiuytrewq
+2026-03-19 23:19:56,688 [INFO] 172.18.0.4 GET /api/game/achievements prajwal91
+2026-03-19 23:19:56,700 [INFO] <SecureCookieSession {'username': 'prajwal91'}> - poiuytrewq
+2026-03-19 23:19:56,700 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal91
+2026-03-19 23:19:57,716 [INFO] <SecureCookieSession {'username': 'prajwal91'}> - poiuytrewq
+2026-03-19 23:19:57,717 [INFO] 172.18.0.4 POST /api/auth/logout prajwal91
+2026-03-19 23:19:57,717 [INFO] prajwal91 logged out
+2026-03-19 23:20:04,075 [INFO] <SecureCookieSession {}> - poiuytrewq
+2026-03-19 23:20:04,075 [INFO] 172.18.0.4 POST /api/auth/login anonymous
+2026-03-19 23:20:04,292 [INFO] prajwal91 successfully logged in
+2026-03-19 23:20:04,306 [INFO] <SecureCookieSession {'username': 'prajwal91'}> - poiuytrewq
+2026-03-19 23:20:04,307 [INFO] 172.18.0.4 GET /api/game/achievements prajwal91
+2026-03-19 23:20:04,311 [INFO] <SecureCookieSession {'username': 'prajwal91'}> - poiuytrewq
+2026-03-19 23:20:04,311 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal91
+2026-03-19 23:20:34,320 [INFO] <SecureCookieSession {'username': 'prajwal91'}> - poiuytrewq
+2026-03-19 23:20:34,320 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal91
+2026-03-19 23:21:04,317 [INFO] <SecureCookieSession {'username': 'prajwal91'}> - poiuytrewq
+2026-03-19 23:21:04,317 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal91
+2026-03-19 23:21:34,322 [INFO] <SecureCookieSession {'username': 'prajwal91'}> - poiuytrewq
+2026-03-19 23:21:34,322 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal91
+2026-03-19 23:22:04,316 [INFO] <SecureCookieSession {'username': 'prajwal91'}> - poiuytrewq
+2026-03-19 23:22:04,317 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal91
+2026-03-19 23:22:34,322 [INFO] <SecureCookieSession {'username': 'prajwal91'}> - poiuytrewq
+2026-03-19 23:22:34,322 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal91
+2026-03-19 23:23:35,412 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 23:23:35,412 [INFO] 172.18.0.4 GET /api/auth/check prajwal2000
+2026-03-19 23:23:35,444 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 23:23:35,445 [INFO] 172.18.0.4 GET /api/game/achievements prajwal2000
+2026-03-19 23:23:35,471 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 23:23:35,472 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal2000
+2026-03-19 23:23:48,616 [INFO] <SecureCookieSession {'username': 'prajwal2000'}> - poiuytrewq
+2026-03-19 23:23:48,616 [INFO] 172.18.0.4 POST /api/auth/logout prajwal2000
+2026-03-19 23:23:48,617 [INFO] prajwal2000 logged out
+2026-03-19 23:23:52,518 [INFO] <SecureCookieSession {}> - poiuytrewq
+2026-03-19 23:23:52,519 [INFO] 172.18.0.4 POST /api/auth/login anonymous
+2026-03-19 23:23:52,522 [INFO] user attempted to login up, but username does not exist
+2026-03-19 23:23:58,752 [INFO] <SecureCookieSession {}> - poiuytrewq
+2026-03-19 23:23:58,752 [INFO] 172.18.0.4 POST /api/auth/login anonymous
+2026-03-19 23:23:58,968 [INFO] prajwal91 successfully logged in
+2026-03-19 23:23:58,991 [INFO] <SecureCookieSession {'username': 'prajwal91'}> - poiuytrewq
+2026-03-19 23:23:58,991 [INFO] 172.18.0.4 GET /api/game/achievements prajwal91
+2026-03-19 23:23:58,998 [INFO] <SecureCookieSession {'username': 'prajwal91'}> - poiuytrewq
+2026-03-19 23:23:58,998 [INFO] 172.18.0.4 GET /api/game/player-stats prajwal91
+2026-03-19 23:24:21,862 [INFO] <SecureCookieSession {'username': 'prajwal91'}> - poiuytrewq
+2026-03-19 23:24:21,863 [INFO] 172.18.0.4 POST /api/auth/logout prajwal91
+2026-03-19 23:24:21,863 [INFO] prajwal91 logged out

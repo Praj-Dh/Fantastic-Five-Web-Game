@@ -50,11 +50,11 @@ function Signup({ setUser }) {
   const ValidationIndicator = ({ isValid, text }) => (
     <div style={{ display: 'flex', alignItems: 'center', margin: '0.2rem 0' }}>
       {isValid ? (
-        <span style={{ color: 'green', marginRight: '0.5rem' }}>✓</span>
+        <span style={{ color: 'var(--success-color)', marginRight: '0.5rem', fontWeight: '600' }}>✓</span>
       ) : (
-        <span style={{ color: 'red', marginRight: '0.5rem' }}>✗</span>
+        <span style={{ color: 'var(--danger-color)', marginRight: '0.5rem', fontWeight: '600' }}>✗</span>
       )}
-      <span style={{ color: isValid ? 'green' : 'inherit' }}>{text}</span>
+      <span style={{ color: isValid ? 'var(--success-color)' : 'var(--text-muted)', fontSize: '0.88rem' }}>{text}</span>
     </div>
   );
 
